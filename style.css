@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+main {
+    text-align: center;
+    margin-top: 150px;
+    height: 90vh;
+}
+.container {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    background-color:gray;
+    display: block;
+    width: 400px;
+    height: auto;
+}
+.output-container {
+    background-color: rgba(256, 256, 256, 0.8);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 90px;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+.output{
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.button-grid {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: "operators"
+                          "numbers";
+    background-color: gray;
+    margin-top: 30px;
+}
+.number-grid {
+    grid-area: numbers;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.operator-grid {
+    grid-area: operators;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 10px;
+}
+.btn {
+    width: 80px;
+    height: 60px;
+}
+.operator-grid .btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 150px;
+}
+.hiding {
+    display: none;
+}
+.history {
+    float: right;
+    width: 50%;
+    height: 30%;
+    font-size: 15px;
+    color: black;
+}
+.number-grid button {
+    background-color: rgba(256, 256, 256, 0.8);
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 19px;
+    border: 3px solid black;
+}
+.operator-grid button {
+    background-color: gray;
+    color:  black;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 19px;
+    border: 3px solid black;
+}
+.operator-grid  #bspace {
+    background-color: chartreuse;
+}
+.operator-grid #clear {
+    background-color: cyan;
+}
